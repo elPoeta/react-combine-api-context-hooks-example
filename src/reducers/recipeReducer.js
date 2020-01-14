@@ -8,7 +8,6 @@ export const recipeReducer = (state, action) =>{
         id: uuid(),
         title: action.recipe.title,
         ingredients: action.recipe.ingredients,
-        preparation: action.recipe.preparation,
         cookTime: action.recipe.cookTime,
         servings: action.recipe.servings
       }]

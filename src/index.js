@@ -5,6 +5,7 @@ import RecipeContextProvider from './contexts/RecipeContext'
 import './index.css';
 import App from './App';
 import Home from './components/Home';
+import RecipeForm from './components/forms/RecipeForm';
 
 import * as serviceWorker from './serviceWorker';
 
@@ -14,6 +15,7 @@ ReactDOM.render(
     <App>
       <Switch>
         <Route exact path="/" component={Home} />
+        <Route path="/addrecipe" component={RecipeForm} />
       </Switch>
     </App>
   </BrowserRouter>
