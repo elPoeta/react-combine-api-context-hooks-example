@@ -6,6 +6,7 @@ const App = props => {
   return (
     <div className="App">
      <Header/>
+     <h2>DEMO - API CONTEXT - HOOKS</h2>
      {props.children}
     </div>
   );
