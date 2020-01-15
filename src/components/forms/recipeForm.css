@@ -34,8 +34,7 @@
     text-transform: uppercase;
 }
 
-.RecipeForm-btnSubmit:hover,
-.RecipeForm-btnSubmit:focus{
+.RecipeForm-btnSubmit:hover {
   background:#1ab13b;
   color:#fff;
   outline:0;

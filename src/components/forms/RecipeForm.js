@@ -17,7 +17,7 @@ const RecipeForm = () => {
          type:ADD_RECIPE, 
          recipe: {
            title,
-           ingredients,
+           ingredients: ingredients.trim().split('\n'),
            cookTime,
            servings
          }

@@ -1,6 +1,6 @@
 import React,{useContext} from 'react'
 import {RecipeContext} from '../../contexts/RecipeContext';
-import RecipeDetail from './RecipeDetail';
+import RecipeItem from './RecipeItem';
 import './recipe.css';
 
 const RecipeList = () => {
@@ -9,7 +9,7 @@ const RecipeList = () => {
         <div className="Recipe">
                  {recipes.length ? 
                      recipes.map( recipe => (
-                         <RecipeDetail  
+                         <RecipeItem  
                            key={recipe.id}
                            recipe={recipe}/>
                      ))
