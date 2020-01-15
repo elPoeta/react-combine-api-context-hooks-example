@@ -3,7 +3,7 @@ import NavLinkItem from './NavLinkItem';
 
 const NavBar = () => {
   const [links] = useState([
-     {id:1, url:"/", title:"Home"},
+     {id:1, url:"/", title:"Recipes"},
      {id:2, url:"/addrecipe", title:"Create"}
   ])
   return (
