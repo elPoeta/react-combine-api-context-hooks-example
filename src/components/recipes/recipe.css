@@ -53,5 +53,69 @@
     transition: background-color 2s ease-out;
 }
 
+.card {
+    display: grid;
+    grid-template-columns: 400px;
+    grid-template-rows: 80px 1fr 80px;
+    grid-template-areas: "title" "text" "misc";
+    border-radius: 18px;
+    background: white;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+    font-family: roboto;
+    text-align: center;
+    transition: 0.5s ease;
+    cursor: pointer;
+    width: 400px;
+    margin: 2em auto;
+  }
+  .card-title {
+    grid-area: title;
+    align-self: end;
+  }
+  
+  .card-ingredient {
+    grid-area: text;
+    margin: 25px;
+  }
+  .card-ingredient p {
+    color: #222;
+    font-size:15px;
+    font-weight: 300;
+  }
+  .card-title h2 {
+    margin-top:0px;
+    font-size:28px;
+  }
+  .card-misc {
+    grid-area: misc; 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background: #81d7ec;
+  }
+  .card-misc .misc {
+    padding:10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #222;
+  }
 
+  .card-misc .value{
+    font-size:1.3em;
+    font-weight: 500;
+  }
+  .card-misc .type{
+    font-size:1.3em;
+    font-weight: 300;
+    text-transform: uppercase;
+  }
+  .card:hover {
+    transform: scale(1.1);
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
+  }
+  
  
