@@ -17,30 +17,31 @@
     border-radius: .2em;
     padding: 1em;
 }
-
+.Recipe-card a:nth-child(4),
 .Recipe-card button {
     width: 80%;
     justify-self: center;
     text-align: center;
-    background-color: #fff;
-    border: 2px solid;
-    padding: .2em;
     cursor: pointer;
     font-weight: bold;
-    outline: none;
 }
 
-.Recipe-card button:nth-child(4) {
-    border-color: green;
-    color: green;
-}
-.Recipe-card button:nth-child(5) {
-    border-color: #6b0909;
+.Recipe-card button {
     background-color: #6b0909;
+    border: 2px solid #6b0909;
+    padding: .2em;
+    outline: none;
     color: #fff;
 }
 
-.Recipe-card button:nth-child(4):hover {
+.Recipe-card a:nth-child(4) {
+    text-decoration: none;
+    border: 2px solid green;
+    color: green;
+    font-size: .9em;
+}
+
+.Recipe-card a:nth-child(4):hover {
     color: #fff;
     background-color: green;
     transition: background-color 2s ease-out;
