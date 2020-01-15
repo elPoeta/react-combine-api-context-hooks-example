@@ -1,10 +1,11 @@
-import React,{useContext} from 'react'
-import {RecipeContext} from '../contexts/RecipeContext';
+import React from 'react'
+import RecipeList from './recipes/RecipeList'
+
 const Home = () => {
-    const {recipes} =  useContext(RecipeContext);
+    
     return (
         <div>
-            {recipes.length ? <h2>Recipes</h2> : <h3>Sorry not recipes yet :( ...</h3>}
+          <RecipeList/>
         </div>
     )
 }
