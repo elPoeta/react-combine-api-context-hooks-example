@@ -3,7 +3,7 @@ import {RecipeContext} from '../../contexts/RecipeContext';
 const RecipeDetail = (props) => {
   const {recipes} = useContext(RecipeContext)
   const id = props.match.params.id;
-  const {title, ingredients, cookTime, servings} = recipes.filter(recipe => recipe.id.toString() === id.toString())[0];
+ const {title, ingredients, cookTime, servings} = recipes.find(recipe => recipe.id.toString() === id.toString());
   return (
     <div>
 <h2>{title}</h2>
